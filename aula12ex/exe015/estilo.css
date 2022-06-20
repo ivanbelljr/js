@@ -17,6 +17,24 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
 
 }
+#botao {
+    font:bold 20px Arial;
+    background-color: rgb(179, 179, 255);
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+#botao:hover {
+    text-decoration: underline;
+    background-color:yellow;
+    
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+    
+}
 footer {
     color: white;
     text-align: center;
