@@ -1,5 +1,5 @@
-function calcular( ){
-    let num = document.getElementById('cx1')
+function tabuada( ){
+    let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
     
     if(num.value.length == 0 ) {
@@ -7,34 +7,14 @@ function calcular( ){
         
     } else{
         let n = Number(num.value)
-        alert('Por favor, digite um número!')
+        let c = 1
+        tab.innerHTML = ''
+        for(c; c<=10; c++) {
+            let item = document.createElement('option')
+            item.text = `${n} * ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+            
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*function calcular() {
-    let res = document.getElementById('res')
-    res.innerHTML = "gerando tabuada"
-    let a = document.getElementById('cx1') 
-    let b = Number(a.value)
-    
-    for(let c = b; b <=10; c *=b){
-        res.innerHTML += `${res}`
-
-    } 
-
-
-    
-}*/
